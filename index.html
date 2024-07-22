@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple tailwind</title>
+</head>
+
+<body>
+    <section id="hero">
+        <div class="container px-5 py-12 mx-auto max-w-8xl ">
+            <nav
+                class="flex items-center justify-between px-5 font-bold md:bg-gradient-to-l md:from-white md:to-transparent">
+                <span class="text-2xl font-bold md:block">EASY QUIZ!</span>
+                <div class="hidden h-20 font-sans md:flex md:justify-center md:items-center md:text-xl md:space-x-8">
+                    <div class="group">
+                        <a href="#">about</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-emerald-500">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Careers</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-emerald-500"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Events</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-emerald-500"></div>
+                    </div>
+                    <div class="group">
+                        <a href="#">Support</a>
+                        <div class="mx-2 group-hover:border-b group-hover:border-emerald-500"></div>
+                    </div>
+                    <!--@todo berger menu Button-->
+                </div>
+                <div class="md:hidden">
+                    <button type="button" id="menu-btn" class="z-40 block hamburger md:hidden focus:outline-none ">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+            <div id="menu"
+                class="absolute top-0 bottom-0 left-0 flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+                <a class="hover:text-emerald-500" href="#">About</a>
+                <a class="hover:text-emerald-500" href="#">Careers</a>
+                <a class="hover:text-emerald-500" href="#">Events</a>
+                <a class="hover:text-emerald-500" href="#">Support</a>
+
+            </div>
+
+
+            <div
+                class="hidden w-1/4 p-4 mb-32 font-sans text-4xl uppercase md:block mt-42 maxe-lg text-stone-800 md:p-10 md:m-32 md:mx-0 md:text-6xl md:w-3/6">
+                Fantastic Experience!
+            </div>
+        </div>
+    </section>
+    <section id="whyQuizy2Pro">
+        <div class="container max-w-6xl px-8 mx-auto my-8 text-gray-900 md:my-32 md:px-0 md:py-0">
+            <h2 class="text-3xl text-center text-gray-900 uppercase md:text-5xl">Why Quizy2Pro?</h2>
+            <div class="flex justify-center my-3 md:justify-end">
+                <button
+                    class="px-10 py-2 mt-4 tracking-widest text-center uppercase border-2 border-black rounded text-zinc-700 hover:bg-black hover:text-white focus:outline-none focus:shadow-outline">
+                    Learn More </button>
+            </div>
+            <div class="grid grid-cols-1 gap-4 mt-8 md:grid-cols-3">
+                <div class="group">
+                    <div class="bg-white shadow-lg group-hover:scale-110 group-hover:shadow-2xl">
+                        <img src="images/sampletest2.jpg" class="w-3/3" alt="user-friendly Quiz">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">Easy-to-Create Quizzes</h3>
+                            <p>Creating quizzes on our platform is incredibly
+                                straightforward, even for the first version. Our intuitive
+                                quiz builder allows instructors to quickly design quizzes with
+                                a single question format: multiple-choice questions with four
+                                checkboxes, where only one answer is correct. Simply enter
+                                your question, provide four possible answers, and indicate the
+                                correct one. The user-friendly interface ensures that you can
+                                set up your quizzes in minutes, making the process efficient
+                                and hassle-free. This simplicity helps you focus on crafting
+                                quality questions and engaging your students effectively
+                                without getting bogged down by complex settings or
+                                configurations..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="bg-white shadow-lg group-hover:scale-110 group-hover:shadow-2xl">
+                        <img src=" images/realtime.jpg" alt="realtime Quiz">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">Real-time Results</h3>
+                            <p>Our platform provides real-time results, giving instant
+                                feedback to both students and instructors. As soon as a quiz
+                                is completed, users receive immediate scoring and feedback on
+                                their performance, helping them understand their strengths and
+                                areas for improvement right away. Instructors can monitor
+                                progress in real-time, allowing them to quickly identify
+                                common misconceptions and adjust their teaching strategies
+                                accordingly. This immediate insight not only enhances the
+                                learning experience but also keeps students motivated and
+                                engaged, as they can see their progress and achievements
+                                instantly. Real-time results make learning dynamic and
+                                responsive, ensuring that every quiz contributes meaningfully
+                                to the educational journey.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="bg-white shadow-lg group-hover:scale-110 group-hover:shadow-2xl">
+                        <img src="images/personalised.jpg" class="w-3/3" alt="personalised Quiz">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">Personalized Learning Paths</h3>
+                            <p>Our platform takes personalized learning to the next level by
+                                creating customized learning paths for each student based on
+                                their quiz performance. As students complete quizzes, the
+                                system analyzes their results and tailors future quiz content
+                                to address their individual needs and knowledge gaps. This
+                                adaptive learning approach ensures that students receive
+                                targeted practice on areas where they need improvement, while
+                                also reinforcing their strengths. Personalized learning paths
+                                help students progress at their own pace, making learning more
+                                efficient and effective. Instructors can also track each
+                                student’s unique learning journey, providing additional
+                                support and resources as needed to maximize their educational
+                                growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="feature">
+        <div
+            class="container relative flex flex-col max-w-6xl px-6 mx-auto my-8 text-gray-900 md:my-32 md:flex-row md:px-0 md:py-0">
+            <img src="images/feature.jpg" alt="feature">
+            <div class="pr-0 bg-white top-48 lg:absolute lg:-right-10 lg:top-0 xl:-right-36 md:py-12 md:pl-20">
+                <h2
+                    class="max-w-lg mt-10 mb-6 font-sans text-3xl text-left text-gray-900 uppercase md:text-left md:text-5xl md:mt-0">
+                    Unlock the Power of Learning with Our Interactive Quizzes!</h2>
+                <p class="max-w-md text-justify md:text-left">Welcome to Quiz, the ultimate online quiz platform
+                    designed
+                    to help you learn and
+                    master any subject. Whether you're a student, instructor, or lifelong learner, our quizzes make
+                    learning engaging and effective.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sampleQuizzes">
+        <div class="container max-w-6xl px-8 mx-auto my-8 text-gray-900 md:my-32 md:px-0 md:py-0">
+            <h2 class="text-3xl text-center text-gray-900 uppercase md:text-5xl">Sample Quizzes</h2>
+            <div class="flex justify-center my-3 md:justify-end"> <button
+                    class="px-10 py-2 mt-4 tracking-widest text-center uppercase border-2 border-black rounded text-zinc-700 hover:bg-black hover:text-white focus:outline-none focus:shadow-outline">View
+                    All Quizzes</button></div>
+
+            <div class="grid grid-cols-1 gap-4 mt-8 md:grid-cols-3">
+                <div class="group">
+                    <div class="bg-white shadow-lg group-hover:scale-110 group-hover:shadow-2xl">
+                        <img src="images/sampletest1.jpg" class="w-3/3" alt="Math Quiz">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">Math Quiz</h3>
+                            <p>Test your math skills with our interactive math quiz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="bg-white shadow-lg group-hover:scale-110 group-hover:shadow-2xl">
+                        <img src=" images/sampletest2.jpg" alt="Science Quiz">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">Science Quiz</h3>
+                            <p>Test your science knowledge with our interactive science quiz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="bg-white shadow-lg group-hover:scale-110 group-hover:shadow-2xl">
+                        <img src="images/history-test.jpg" class="w-3/3" alt="Math Quiz">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold">History Quiz</h3>
+                            <p>Test your history knowledge with our interactive history quiz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black">
+        <div class="container max-w-6xl py-10 mx-auto">
+            <div
+                class="flex flex-col items-start mb-8 space-y-6 md:items-center md:flex-row md:space-y-0 md:justify-between">
+                <div class="flex flex-col items-center mx-auto space-y-8 md:items-start md:space-y-4">
+                    <div class="h-8">
+                        <span class="block pl-2 text-xl font-bold text-white">EASY QUIZ!</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center space-y-4 text-white fobt-bold md:flex-row md:space-y-0 md:space-x-6 md:ml-3 ">
+                        <div class="h-10 group ">
+                            <a href="#">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-emerald-500"></div>
+                        </div>
+                        <div class="h-10 group md:mt-3">
+                            <a href="#">Careers</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-emerald-500"></div>
+                        </div>
+                        <div class="h-10 group md:mt-3">
+                            <a href="#">Events</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-emerald-500"></div>
+                        </div>
+                        <div class="h-10 group md:mt-3">
+                            <a href="#">Support</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-emerald-500"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start justify-between mx-auto space-y-4 text-gray-500">
+                    <div class="flex flex-col items-center justify-center md:justify-start md:flex-row">
+                        <span class="pl-2 text-xl font-bold text-white md:mr-2">Follow Us</span>
+                        <div
+                            class="flex flex-col items-center justify-start mt-3 space-y-4 md:space-x-4 md:flex-row md:justify-start md:space-y-0 md:mt-0">
+                            <a href="#"><img src="images/icons/icon-facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="images/icons/icon-twitter.svg" alt="twitter"></a>
+                            <a href="#"><img src="images/icons/icon-instagram.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto font-bold text-white">
+                    <span class="">&copy; 2024 Quiz4Pro. All rights reserved.</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
