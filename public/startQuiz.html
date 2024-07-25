@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simple tailwind</title>
+</head>
+
+<body>
+
+    <section id="header">
+        <div class="container px-5 py-8 mx-auto max-w-8xl">
+
+            <nav
+                class="relative flex items-center justify-between px-5 font-bold md:bg-gradient-to-l md:from-white md:to-transparent">
+                <span class="text-2xl font-bold md:block">EASY QUIZ!</span>
+                <div class="hidden h-20 font-sans md:flex md:justify-center md:items-center md:text-xl md:space-x-8">
+                    <div class="flex items-center justify-center">
+                        <a href="#"
+                            class="text-lg font-bold text-gray-900 rounded-full pe-1 hover:text-stone-600 dark:hover:text-stone-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white">About</a>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <a href="#"
+                            class="text-lg font-bold text-gray-900 rounded-full pe-1 hover:text-stone-600 dark:hover:text-stone-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white">Support</a>
+                    </div>
+
+                    <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName"
+                        class="flex items-center text-lg font-bold text-gray-900 rounded-full pe-1 hover:text-stone-600 dark:hover:text-stone-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
+                        type="button">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full me-2" src="https://api.dicebear.com/7.x/lorelei/svg"
+                            alt="user photo">
+                        Bonnie Green
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdownAvatarName"
+                        class="absolute z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                            <div class="font-normal ">Pro User</div>
+                            <div class="truncate">name@flowbite.com</div>
+                        </div>
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            </li>
+                        </ul>
+                        <div class="py-2">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                out</a>
+                        </div>
+                    </div>
+                    <!--@todo berger menu Button-->
+                </div>
+                <div class=" md:hidden">
+                    <button type="button" id="menu-btn" class="z-40 block hamburger md:hidden focus:outline-none ">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
+            </nav>
+            <div id="menu"
+                class="absolute top-0 bottom-0 left-0 flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+                <a class="hover:text-emerald-500" href="#">About</a>
+                <a class="hover:text-emerald-500" href="#">Careers</a>
+                <a class="hover:text-emerald-500" href="#">Events</a>
+                <a class="hover:text-emerald-500" href="#">Support</a>
+
+            </div>
+        </div>
+    </section>
+    <section id="startQuiz">
+        <div class="container max-w-6xl px-8 mx-auto my-8 text-gray-900 min-h-svh md:my-32 md:px-0 md:py-0">
+            <h2 class="my-16 text-3xl text-center text-gray-900 uppercase md:text-5xl">Are you ready for start test?
+            </h2>
+
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2">
+                    <img src="./images/rubica.jpg" alt="quiz" class="">
+                </div>
+                <div class="w-full md:w-1/2 md:px-5">
+                    <h4 class="my-8 text-2xl">
+                        Before You Start the Quiz :
+                    </h4>
+                    <p class="my-4">Taking a quiz can be a stressful experience, but it doesn't have to be. Here are
+                        some
+                        tips to help you prepare for the quiz and reduce stress:</p>
+                    <ul>
+                        <li>Find a quiet place free from distractions to focus on the quiz.</li>
+                        <li>Inform others in your household or workspace that you will be taking a quiz to minimize
+                            interruptions.</li>
+                        <li>Ensure a Stable Internet Connection</li>
+                        <li>Ensure your device (computer, tablet, or smartphone) is fully charged or plugged in.
+                        </li>
+                        <li>Have any allowed materials (e.g., pen, paper, calculator) ready if permitted by the quiz
+                            rules.
+                        <li>Read Instructions Carefully.</li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col my-4 md:flex-row">
+                <div class="w-full">
+                    <h4 class="my-8 text-2xl">
+                        Quiz Instructions :
+                    </h4>
+                    <p class="my-4">The quiz consists of 10 multiple-choice questions. Each question has four
+                        possible
+                        answers, but only one is correct. You will have 30 seconds to answer each question. Once you
+                        select an answer, you cannot change it. The quiz will automatically move to the next
+                        question
+                        after 30 seconds. If you do not answer a question within the time limit, the quiz will move
+                        on
+                        to
+                        the next question. You will receive your score at the end of the quiz. Good luck!</p>
+                </div>
+            </div>
+
+            <div class="flex justify-center my-3 md:justify-end">
+                <button
+                    class="px-10 py-2 mt-4 tracking-widest text-center uppercase border-2 border-black rounded text-zinc-700 hover:bg-black hover:text-white focus:outline-none focus:shadow-outline">
+                    Let 's start </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="bottom-0 left-0 right-0 bg-black ">
+        <div class="container max-w-6xl py-10 mx-auto">
+            <div
+                class="flex flex-col items-start mb-8 space-y-6 md:items-center md:flex-row md:space-y-0 md:justify-between">
+                <div class="flex flex-col items-center mx-auto space-y-8 md:items-start md:space-y-4">
+                    <div class="h-8">
+                        <span class="block pl-2 text-xl font-bold text-white">EASY QUIZ!</span>
+                    </div>
+                    <div
+                        class="flex flex-col items-center space-y-4 text-white fobt-bold md:flex-row md:space-y-0 md:space-x-6 md:ml-3 ">
+                        <div class="h-10 group ">
+                            <a href="#">About</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-zinc-50"></div>
+                        </div>
+                        <div class="h-10 group md:mt-3">
+                            <a href="#">Careers</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-zinc-50"></div>
+                        </div>
+                        <div class="h-10 group md:mt-3">
+                            <a href="#">Events</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-zinc-50"></div>
+                        </div>
+                        <div class="h-10 group md:mt-3">
+                            <a href="#">Support</a>
+                            <div class="mx-2 group-hover:border-b group-hover:border-zinc-50"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-start justify-between mx-auto space-y-4 text-gray-500">
+                    <div class="flex flex-col items-center justify-center md:justify-start md:flex-row">
+                        <span class="pl-2 text-xl font-bold text-white md:mr-2">Follow Us</span>
+                        <div
+                            class="flex flex-col items-center justify-start mt-3 space-y-4 md:space-x-4 md:flex-row md:justify-start md:space-y-0 md:mt-0">
+                            <a href="#"><img src="./images/icons/icon-facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="./images/icons/icon-twitter.svg" alt="twitter"></a>
+                            <a href="#"><img src="./images/icons/icon-instagram.svg" alt="instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-auto font-bold text-white">
+                    <span class="">&copy; 2024 Quiz4Pro. All rights reserved.</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
