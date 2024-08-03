@@ -10,48 +10,87 @@
 </head>
 
 <body>
-    <section id="hero">
-        <div class="container px-5 py-12 mx-auto max-w-8xl ">
+    <section id="header">
+        <div class="container px-5 py-8 mx-auto max-w-8xl">
+
             <nav
-                class="flex items-center justify-between px-5 font-bold md:bg-gradient-to-l md:from-white md:to-transparent">
+                class="relative flex items-center justify-between px-5 font-bold md:bg-gradient-to-l md:from-white md:to-transparent">
                 <span class="text-2xl font-bold md:block">EASY QUIZ!</span>
                 <div class="hidden h-20 font-sans md:flex md:justify-center md:items-center md:text-xl md:space-x-8">
-                    <div class="group">
-                        <a href="#">about</a>
-                        <div class="mx-2 group-hover:border-b group-hover:border-stone-900">
+                    <div class="flex items-center justify-center">
+                        <a href="#"
+                            class="text-lg font-bold text-gray-900 rounded-full pe-1 hover:text-stone-600 dark:hover:text-stone-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white">About</a>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <a href="#"
+                            class="text-lg font-bold text-gray-900 rounded-full pe-1 hover:text-stone-600 dark:hover:text-stone-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white">Support</a>
+                    </div>
+
+                    <button id="dropdownAvatarNameButton" data-dropdown-toggle="dropdownAvatarName"
+                        class="flex items-center text-lg font-bold text-gray-900 rounded-full pe-1 hover:text-stone-600 dark:hover:text-stone-500 md:me-0 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-white"
+                        type="button">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full me-2" src="https://api.dicebear.com/7.x/lorelei/svg"
+                            alt="user photo">
+                        Bonnie Green
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </button>
+
+                    <!-- Dropdown menu -->
+                    <div id="dropdownAvatarName"
+                        class="absolute z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+                            <div class="font-normal ">Pro User</div>
+                            <div class="truncate">name@flowbite.com</div>
                         </div>
-                    </div>
-                    <div class="group">
-                        <a href="#">Careers</a>
-                        <div class="mx-2 group-hover:border-b group-hover:border-stone-900""></div>
-                    </div>
-                    <div class=" group">
-                            <a href="#">Events</a>
-                            <div class="mx-2 group-hover:border-b group-hover:border-stone-900""></div>
-                    </div>
-                    <div class=" group">
-                                <a href="#">Support</a>
-                                <div class="mx-2 group-hover:border-b group-hover:border-stone-900""></div>
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                            </li>
+                        </ul>
+                        <div class="py-2">
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                out</a>
+                        </div>
                     </div>
                     <!--@todo berger menu Button-->
                 </div>
                 <div class=" md:hidden">
-                                    <button type="button" id="menu-btn"
-                                        class="z-40 block hamburger md:hidden focus:outline-none ">
-                                        <span class="hamburger-top"></span>
-                                        <span class="hamburger-middle"></span>
-                                        <span class="hamburger-bottom"></span>
-                                    </button>
-                                </div>
+                    <button type="button" id="menu-btn" class="z-40 block hamburger md:hidden focus:outline-none ">
+                        <span class="hamburger-top"></span>
+                        <span class="hamburger-middle"></span>
+                        <span class="hamburger-bottom"></span>
+                    </button>
+                </div>
             </nav>
             <div id="menu"
-                class="absolute top-0 bottom-0 left-0 flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black">
+                class="absolute top-0 bottom-0 left-0 flex-col self-end hidden w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black md:hidden">
                 <a class="hover:text-emerald-500" href="#">About</a>
                 <a class="hover:text-emerald-500" href="#">Careers</a>
                 <a class="hover:text-emerald-500" href="#">Events</a>
                 <a class="hover:text-emerald-500" href="#">Support</a>
 
             </div>
+        </div>
+    </section>
+    <section id="hero">
+        <div class="container px-5 py-12 mx-auto max-w-8xl ">
+
 
 
             <div
@@ -68,7 +107,7 @@
                     class="px-10 py-2 mt-4 tracking-widest text-center uppercase border-2 border-black rounded text-zinc-700 hover:bg-black hover:text-white focus:outline-none focus:shadow-outline">
                     Learn More </button>
             </div>
-            <div class="grid grid-cols-1 gap-4 mt-8 md:grid-cols-3">
+            <div class="grid grid-cols-1 gap-10 mt-8 md:grid-cols-3">
                 <div class="group">
                     <div class="bg-white shadow-lg group-hover:scale-110 group-hover:shadow-2xl">
                         <img src="./images/sampletest2.jpg" class="w-3/3" alt="user-friendly Quiz">
@@ -237,7 +276,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/flowbite.min.js"></script>
 </body>
 
 </html>
